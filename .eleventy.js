@@ -1,3 +1,9 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("bundle.css");
+  eleventyConfig.addPassthroughCopy("./src/style.css");
+  return {
+    dir: {
+      input: "src",
+      output: "public",
+    },
+  };
 };

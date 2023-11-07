@@ -3,13 +3,36 @@ title: Tino's site
 layout: "base.njk"
 ---
 
-<div>
-  <nav>
-    <ul>
-      <li>The Drinking Song of Earth's Sorrow</li>
-      <li>The Lonely One in Autumn</li>
-      <li>Of Beauty</li>
-    </ul>
-  </nav>
-</div>
+<div class="home-wrapper">
+  <div class="navbar-wrapper">
+    {#
+    <div class="vertical-bar" />
+    #}
 
+    <ul>
+      <li>
+        <div class="text-link">About Me</div>
+      </li>
+      <li>
+        <div class="text-link">Articles</div>
+      </li>
+      <li>
+        <div class="text-link">Contact</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="articles-preview-wrapper">
+    <ul class="articles-preview-list">
+      {%- for post in collections.post -%}
+      <li>
+        <article class="article-preview">
+          <h3>{{ post.data.title }}</h3>
+          <p>Published on {{ post.data.date | postDate }}</p>
+          <p>{{ post.data.description }}</p>
+        </article>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>

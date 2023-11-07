@@ -1,3 +1,13 @@
+:root {
+  --clr-primary-200: rgb(1, 2, 29);
+}
+
+* {
+  background-color: var(--clr-primary-200);
+  color: white;
+  font-family: Nunito;
+}
+
 /* The following reset was proposed by Josh Comeau
 and can be checked out here: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
@@ -75,7 +85,6 @@ h6 {
 }
 
 .header-title {
-  border: 2px solid black;
 }
 
 .picture-of-me {
@@ -84,23 +93,40 @@ h6 {
   border-radius: 60%;
 }
 
+/* Home page style */
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  margin-top: 64px;
+}
+
+.articles-preview-list {
+  list-style: none;
+}
+
+.article-preview {
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  height: 150px;
+  padding: 8px 16px;
+}
+
 /* Navbar style  */
 
 .navbar-wrapper {
-  width: 300px;
   height: 170px;
-  display: flex;
   justify-content: center;
   line-height: 48px;
-  /* border: 2px solid white; */
+  border: 2px solid red;
 }
 
 .vertical-bar {
   border-radius: 30px;
   width: 50px;
   background-color: white;
-  /* color: ${COLORS.primary}; */
-  margin-right: -77px;
 }
 
 .text-link {

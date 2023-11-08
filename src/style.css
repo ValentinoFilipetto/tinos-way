@@ -116,8 +116,8 @@ h6 {
 
 /* Navbar style  */
 
-.navbar-wrapper {
-  height: 170px;
+/* .navbar-wrapper {
+  height: 270px;
   justify-content: center;
   line-height: 48px;
   border: 2px solid red;
@@ -136,5 +136,5 @@ h6 {
   &:hover {
     transition: transform 250ms;
     transform: translateX(10px);
-  }
+  } */
 }

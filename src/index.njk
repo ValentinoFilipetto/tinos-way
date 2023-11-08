@@ -4,24 +4,6 @@ layout: "base.njk"
 ---
 
 <div class="home-wrapper">
-  <div class="navbar-wrapper">
-    {#
-    <div class="vertical-bar" />
-    #}
-
-    <ul>
-      <li>
-        <div class="text-link">About Me</div>
-      </li>
-      <li>
-        <div class="text-link">Articles</div>
-      </li>
-      <li>
-        <div class="text-link">Contact</div>
-      </li>
-    </ul>
-  </div>
-
   <div class="articles-preview-wrapper">
     <ul class="articles-preview-list">
       {%- for post in collections.post -%}

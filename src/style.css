@@ -1,11 +1,14 @@
 :root {
   --clr-primary-200: rgb(1, 2, 29);
+  --clr-secondary-300: rgb(43, 175, 219);
+  --clr-tertiary-400: rgb(236, 236, 7);
 }
 
 * {
   background-color: var(--clr-primary-200);
   color: white;
   font-family: Nunito;
+  font-size: 1.1rem;
 }
 
 /* The following reset was proposed by Josh Comeau
@@ -84,18 +87,25 @@ h6 {
   border-bottom: 2px solid lightblue;
 }
 
-.header-title {
+.picture-of-me {
+  width: 250px;
+  height: 250px;
+  border-radius: 60%;
 }
 
-.picture-of-me {
-  width: 300px;
-  height: 300px;
-  border-radius: 60%;
+.header-title {
+  font-size: 1.8rem;
 }
 
 /* Home page style */
 
-.home-wrapper {
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.articles-preview-wrapper {
   display: flex;
   justify-content: center;
   gap: 160px;
@@ -114,27 +124,54 @@ h6 {
   padding: 8px 16px;
 }
 
+.article-preview:hover a {
+  text-decoration-color: var(--clr-tertiary-400);
+}
+
+.article-preview:hover a h3 {
+  color: var(--clr-tertiary-400);
+}
+
+.articles-preview-list:hover .article-list-item:not(:hover) .article-preview {
+  opacity: 0.3;
+  transition: all 0.2s linear;
+}
+
 /* Navbar style  */
 
-/* .navbar-wrapper {
+.navbar-wrapper {
+  display: flex;
   height: 270px;
-  justify-content: center;
+  width: 250px;
   line-height: 48px;
-  border: 2px solid red;
+  border-radius: 12px;
+  margin-top: 64px;
 }
 
-.vertical-bar {
-  border-radius: 30px;
-  width: 50px;
-  background-color: white;
+.navbar {
+  border: 2px solid white;
+  border-radius: 16px;
+  padding-right: 32px;
 }
 
-.text-link {
-  margin-left: 28px;
-  display: inline-block;
+ul {
+  margin-top: 16px;
+}
 
-  &:hover {
-    transition: transform 250ms;
-    transform: translateX(10px);
-  } */
+ul .navbar-item {
+  list-style: none;
+}
+
+ul .navbar-item .navbar-link {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ul .navbar-item .navbar-link i {
+  margin-right: 12px;
+}
+
+.navbar-link:hover i,
+.navbar-link:hover {
+  color: var(--clr-tertiary-400);
 }

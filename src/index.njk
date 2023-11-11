@@ -3,18 +3,18 @@ title: Tino's site
 layout: "base.njk"
 ---
 
-<div class="home-wrapper">
-  <div class="articles-preview-wrapper">
-    <ul class="articles-preview-list">
-      {%- for post in collections.post -%}
-      <li>
-        <article class="article-preview">
+<div class="articles-preview-wrapper">
+  <ul class="articles-preview-list">
+    {%- for post in collections.post -%}
+    <li class="article-list-item">
+      <article class="article-preview">
+        <a href="">
           <h3>{{ post.data.title }}</h3>
-          <p>Published on {{ post.data.date | postDate }}</p>
-          <p>{{ post.data.description }}</p>
-        </article>
-      </li>
-      {%- endfor -%}
-    </ul>
-  </div>
+        </a>
+        <p>Published on {{ post.data.date | postDate }}</p>
+        <p>{{ post.data.description }}</p>
+      </article>
+    </li>
+    {%- endfor -%}
+  </ul>
 </div>

@@ -81,8 +81,8 @@ h6 {
 
 .header-wrapper {
   display: flex;
-  justify-content: center;
-  gap: 32px;
+  justify-content: space-around;
+  gap: 64px;
   padding: 32px 0px 32px 0px;
   border-bottom: 2px solid lightblue;
 }
@@ -95,6 +95,9 @@ h6 {
 
 .header-title {
   font-size: 1.8rem;
+  margin-right: 30%;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 /* Home page style */
@@ -139,27 +142,28 @@ h6 {
 
 /* Navbar style  */
 
-.navbar-wrapper {
+/* .navbar-wrapper {
   display: flex;
   height: 270px;
   width: 250px;
   line-height: 48px;
   border-radius: 12px;
   margin-top: 64px;
-}
+} */
 
 .navbar {
-  border: 2px solid white;
-  border-radius: 16px;
-  padding-right: 32px;
-}
-
-ul {
-  margin-top: 16px;
+  display: flex;
+  gap: 20px;
+  /* try adding baseline  */
+  margin-top: 13px;
 }
 
 ul .navbar-item {
   list-style: none;
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 ul .navbar-item .navbar-link {
@@ -168,10 +172,17 @@ ul .navbar-item .navbar-link {
 }
 
 ul .navbar-item .navbar-link i {
-  margin-right: 12px;
+  margin-right: 3px;
 }
 
 .navbar-link:hover i,
 .navbar-link:hover {
   color: var(--clr-tertiary-400);
+}
+
+/* Article page */
+
+.article-wrapper {
+  margin-top: 64px;
+  max-width: 70%;
 }

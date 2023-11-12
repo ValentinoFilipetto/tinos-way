@@ -8,7 +8,7 @@ layout: "base.njk"
     {%- for post in collections.post -%}
     <li class="article-list-item">
       <article class="article-preview">
-        <a href="">
+        <a href="{{ post.url }}">
           <h3>{{ post.data.title }}</h3>
         </a>
         <p>Published on {{ post.data.date | postDate }}</p>

@@ -4,6 +4,7 @@ const eleventyGoogleFonts = require("eleventy-google-fonts");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/style");
   eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   eleventyConfig.addFilter("postDate", (dateObj) => {

@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  gap: 20px;
+  /* try adding baseline  */
+  margin-top: 13px;
+}
+
+ul .navbar-item {
+  list-style: none;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+ul .navbar-item .navbar-link {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ul .navbar-item .navbar-link i {
+  margin-right: 3px;
+}
+
+.navbar-link:hover i,
+.navbar-link:hover {
+  color: var(--clr-tertiary-400);
+}

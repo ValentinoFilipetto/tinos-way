@@ -1,0 +1,31 @@
+.articles-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  margin-top: 64px;
+}
+
+.articles-preview-list {
+  list-style: none;
+}
+
+.article-preview {
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  height: 150px;
+  padding: 8px 16px;
+}
+
+.article-preview:hover a {
+  text-decoration-color: var(--clr-tertiary-400);
+}
+
+.article-preview:hover a h3 {
+  color: var(--clr-tertiary-400);
+}
+
+.articles-preview-list:hover .article-list-item:not(:hover) .article-preview {
+  opacity: 0.3;
+  transition: all 0.2s linear;
+}

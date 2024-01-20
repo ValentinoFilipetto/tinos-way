@@ -1,0 +1,14 @@
+.about-me-wrapper {
+  display: flex;
+  margin-top: 64px;
+  gap: 54px;
+}
+
+.text-wrapper {
+  min-width: 50ch;
+  max-width: 63ch;
+}
+
+.text-wrapper p {
+  text-indent: 2.2rem;
+}

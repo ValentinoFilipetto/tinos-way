@@ -1,6 +1,8 @@
 .articles-preview-wrapper {
   display: flex;
+
   justify-content: center;
+  flex-direction: column;
   gap: 160px;
   margin-top: 64px;
 }
@@ -28,4 +30,17 @@
 .articles-preview-list:hover .article-list-item:not(:hover) .article-preview {
   opacity: 0.3;
   transition: all 0.2s linear;
+}
+
+.pagination-link {
+  align-self: flex-end;
+  margin-top: -128px;
+}
+
+.pagination-link:hover {
+  color: var(--clr-tertiary-400);
+}
+
+.pagination-link:last-of-type {
+  margin-left: 8px;
 }

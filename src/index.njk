@@ -1,12 +1,16 @@
 ---
 title: Tino's site
 layout: "base.njk"
+pagination:
+  data: collections.post
+  size: 3
+  alias: posts
 ---
 
 <div class="articles-preview-wrapper">
   <link rel="stylesheet" href="/style/home.css" />
   <ul class="articles-preview-list">
-    {%- for post in collections.post -%}
+    {%- for post in posts -%}
     <li class="article-list-item">
       <article class="article-preview">
         <a href="{{ post.url }}">
@@ -18,4 +22,14 @@ layout: "base.njk"
     </li>
     {%- endfor -%}
   </ul>
+
+  {% if pagination.href.previous %}
+  <div class="pagination-link">
+    <a class="pagination-link" href="{{ pagination.href.previous }}">
+      Previous Page</a
+    >
+    {% endif %} {% if pagination.href.next %}
+    <a class="pagination-link" href="{{ pagination.href.next }}">Next Page</a>
+  </div>
+  {% endif %}
 </div>

@@ -84,3 +84,9 @@ h6 {
   justify-content: center;
   gap: 32px;
 }
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

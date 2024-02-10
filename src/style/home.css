@@ -34,7 +34,7 @@
 
 .pagination-link {
   align-self: flex-end;
-  margin-top: -128px;
+  margin: -164px 0px 128px 0px;
 }
 
 .pagination-link:hover {

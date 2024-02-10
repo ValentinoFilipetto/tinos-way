@@ -14,10 +14,12 @@ pagination:
     <li class="article-list-item">
       <article class="article-preview">
         <a href="{{ post.url }}">
-          <h3>{{ post.data.title }}</h3>
+          <h3 class="article-title">{{ post.data.title }}</h3>
         </a>
-        <p>Published on {{ post.data.date | postDate }}</p>
-        <p>{{ post.data.description }}</p>
+        <p class="article-details">
+          Published on {{ post.data.date | postDate }}
+        </p>
+        <p class="article-details">{{ post.data.description }}</p>
       </article>
     </li>
     {%- endfor -%}

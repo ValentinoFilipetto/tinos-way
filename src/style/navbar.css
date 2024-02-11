@@ -1,7 +1,10 @@
+.navbar-wrapper {
+  height: fit-content;
+}
+
 .navbar {
   display: flex;
   gap: 20px;
-  /* try adding baseline  */
   margin-top: 13px;
 }
 
@@ -16,6 +19,7 @@ ul .navbar-item {
 ul .navbar-item .navbar-link {
   text-decoration: none;
   text-transform: capitalize;
+  text-wrap: nowrap;
 }
 
 ul .navbar-item .navbar-link i {
@@ -25,4 +29,10 @@ ul .navbar-item .navbar-link i {
 .navbar-link:hover i,
 .navbar-link:hover {
   color: var(--clr-tertiary-400);
+}
+
+@media (max-width: 350px) {
+  .navbar-wrapper {
+    margin-right: 164px;
+  }
 }

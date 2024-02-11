@@ -1,20 +1,21 @@
 .header-wrapper {
   display: flex;
-  justify-content: space-around;
-  gap: 64px;
-  padding: 32px 0px 32px 0px;
-  border-bottom: 2px solid lightblue;
+  justify-content: space-between;
+  padding: 32px 64px 32px 64px;
 }
 
-.picture-of-me {
-  width: 250px;
-  height: 250px;
-  border-radius: 60%;
+.greeting {
+  color: var(--clr-tertiary-400);
+  width: fit-content;
 }
 
-.header-title {
-  font-size: 1.8rem;
-  margin-right: 30%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+.welcome {
+  font-size: 2rem;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 550px) {
+  .header-wrapper {
+    padding: 0px 16px 0px 16px;
+  }
 }

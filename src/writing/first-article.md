@@ -4,7 +4,7 @@ title: On Mahler's Sixth symphony in three pictures
 author: Valentino Filipetto
 date: 2023-06-11
 tags: post
-description: Claudio's Abbado facial expressions give us the opportunity to deepend our understanding of Mahler's Sixth symphony.
+description: Claudio's Abbado facial expressions
 ---
 
 I do believe that Mahler's Sixth symphony is - if not THE peak - one of the peaks of post-romantic orchestral music.

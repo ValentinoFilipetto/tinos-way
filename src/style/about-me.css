@@ -12,3 +12,9 @@
 .text-wrapper p {
   text-indent: 2.2rem;
 }
+
+.picture-of-me {
+  width: 250px;
+  height: 250px;
+  border-radius: 60%;
+}

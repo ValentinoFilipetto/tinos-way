@@ -12,3 +12,10 @@
 .footer-link:hover {
   color: var(--clr-tertiary-400);
 }
+
+@media (max-width: 700px) {
+  .links-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+}

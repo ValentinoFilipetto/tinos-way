@@ -1,6 +1,5 @@
 .articles-preview-wrapper {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   gap: 160px;
@@ -9,6 +8,7 @@
 
 .articles-preview-list {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 .article-title {
@@ -19,7 +19,6 @@
   border: 2px solid white;
   border-radius: 12px;
   margin-bottom: 32px;
-  /* height: 150px; */
   padding: 8px 16px;
 }
 
@@ -51,9 +50,4 @@
 
 .pagination-link:last-of-type {
   margin-left: 8px;
-}
-
-@media (max-width: 550px) {
-  .article-title {
-  }
 }

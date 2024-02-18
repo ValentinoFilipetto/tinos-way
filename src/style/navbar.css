@@ -1,5 +1,5 @@
 .navbar-wrapper {
-  height: fit-content;
+  width: fit-content;
 }
 
 .navbar {
@@ -29,10 +29,4 @@ ul .navbar-item .navbar-link i {
 .navbar-link:hover i,
 .navbar-link:hover {
   color: var(--clr-tertiary-400);
-}
-
-@media (max-width: 350px) {
-  .navbar-wrapper {
-    margin-right: 164px;
-  }
 }

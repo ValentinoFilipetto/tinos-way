@@ -1,12 +1,18 @@
 .header-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 32px 64px 32px 64px;
+  padding: 32px 64px 0px 64px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
 .greeting {
   color: var(--clr-tertiary-400);
-  width: fit-content;
 }
 
 .welcome {
@@ -14,8 +20,13 @@
   text-wrap: nowrap;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .header-wrapper {
-    padding: 0px 16px 0px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .greeting {
+    align-self: center;
   }
 }

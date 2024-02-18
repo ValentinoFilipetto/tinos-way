@@ -18,3 +18,22 @@
   height: 250px;
   border-radius: 60%;
 }
+
+@media (max-width: 700px) {
+  .about-me-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 36px;
+  }
+
+  .text-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .picture-of-me {
+    width: 180px;
+    height: 180px;
+  }
+}

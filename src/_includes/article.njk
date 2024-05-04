@@ -4,6 +4,10 @@ layout: "base.njk"
 
 <article class="article-wrapper">
   <link rel="stylesheet" href="/style/article.css" />
-  <h1>{{ title }}</h1>
+  <link
+    href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    rel="stylesheet"
+  />
+  <h1 class="article-title">{{ title }}</h1>
   {{ content | safe }}
 </article>

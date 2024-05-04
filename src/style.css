@@ -1,8 +1,8 @@
 :root {
   color-scheme: dark;
-  --clr-primary-200: rgb(1, 2, 29);
+  --clr-primary-200: rgb(1, 1, 17);
   --clr-secondary-300: rgb(43, 175, 219);
-  --clr-tertiary-400: rgb(236, 236, 7);
+  --clr-tertiary-400: rgb(188, 188, 56);
 }
 
 * {

@@ -1,10 +1,21 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .articles-preview-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 160px;
   margin-top: 64px;
-  width: 90vh;
+  width: 80vh;
 }
 
 .articles-preview-list {
@@ -17,6 +28,7 @@
 }
 
 .article-preview {
+  animation: fadeInUp 0.3s ease-out forwards;
   border: 2px solid white;
   border-radius: 12px;
   margin-bottom: 32px;

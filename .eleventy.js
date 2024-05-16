@@ -5,6 +5,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function (config) {
   config.addPassthroughCopy("./src/style.css");
   config.addPassthroughCopy("./src/style");
+  config.addPassthroughCopy("./public/img");
   config.addPlugin(eleventyGoogleFonts);
   config.addPlugin(syntaxHighlight);
 

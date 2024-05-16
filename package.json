@@ -15,6 +15,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
   },
   "dependencies": {
-    "eleventy-google-fonts": "^0.1.0"
+    "eleventy-google-fonts": "^0.1.0",
+    "prismjs": "^1.29.0"
   }
 }

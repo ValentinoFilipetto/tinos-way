@@ -1,6 +1,6 @@
 .article-wrapper {
   margin-top: 64px;
-  max-width: 70%;
+  max-width: 45%;
   margin-bottom: 32px;
 }
 
@@ -15,4 +15,31 @@
     max-width: 100%;
     padding-bottom: 36px;
   }
+}
+
+article blockquote {
+  font-style: italic;
+  display: block;
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 16px;
+}
+
+article blockquote::before {
+  position: absolute;
+  background-color: var(--clr-tertiary-400);
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 5px;
+}
+
+article blockquote cite {
+  display: block;
+  width: 100%;
+  font-size: medium;
+  font-style: italic;
+  margin-top: 16px;
+  color: var(--clr-tertiary-400);
 }

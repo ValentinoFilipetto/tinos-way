@@ -13,11 +13,7 @@
 
 .greeting {
   color: var(--clr-tertiary-400);
-}
-
-.welcome {
   font-size: 1.5rem;
-  text-wrap: nowrap;
 }
 
 .greeting .tooltiptext {

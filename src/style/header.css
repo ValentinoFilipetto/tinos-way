@@ -46,6 +46,12 @@
   }
 
   .greeting {
+    display: flex;
+    justify-content: center;
     align-self: center;
   }
+
+  .tooltiptext {
+    margin-top: 34.5px;
+  } 
 }

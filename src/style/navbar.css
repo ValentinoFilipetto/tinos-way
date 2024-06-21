@@ -30,3 +30,9 @@ ul .navbar-item .navbar-link i {
 .navbar-link:hover {
   color: var(--clr-tertiary-400);
 }
+
+@media (max-width: 700px) {
+ .navbar-wrapper {
+  margin-right: 35px;
+ }
+}

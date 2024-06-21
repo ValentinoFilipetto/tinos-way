@@ -8,30 +8,29 @@ pagination:
 ---
 
 <div class="articles-preview-wrapper">
-  <link rel="stylesheet" href="/style/home.css" />
+  <link rel="stylesheet" href="/style/home.css"/>
   <ul class="articles-preview-list">
     {%- for post in posts -%}
-    <li class="article-list-item">
-      <article class="article-preview">
-        <a href="{{ post.url }}">
-          <h3 class="article-title">{{ post.data.title }}</h3>
-        </a>
-        <p class="article-details">
-          Published on {{ post.data.date | postDate }}
-        </p>
-        <p class="article-details">{{ post.data.description }}</p>
-      </article>
-    </li>
+      <li class="article-list-item">
+        <article class="article-preview">
+          <a href="{{ post.url }}">
+            <h3 class="article-title">{{ post.data.title }}</h3>
+          </a>
+          <p class="article-details">
+            Published on {{ post.data.date | postDate }}
+          </p>
+          <p class="article-details">{{ post.data.description }}</p>
+        </article>
+      </li>
     {%- endfor -%}
   </ul>
-
   {% if pagination.href.previous %}
-  <div class="pagination-link">
-    <a class="pagination-link" href="{{ pagination.href.previous }}">
-      Previous Page</a
-    >
-    {% endif %} {% if pagination.href.next %}
-    <a class="pagination-link" href="{{ pagination.href.next }}">Next Page</a>
-  </div>
+    <div class="pagination-link">
+      <a class="pagination-link" href="{{ pagination.href.previous }}">
+        Previous Page</a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a class="pagination-link" href="{{ pagination.href.next }}">Next Page</a>
+    </div>
   {% endif %}
 </div>

@@ -52,7 +52,7 @@ article blockquote {
 article blockquote::before {
   position: absolute;
   background-color: var(--clr-tertiary-400);
-  content: "";
+  content: '';
   height: 100%;
   left: 0;
   top: 0;
@@ -66,4 +66,11 @@ article blockquote cite {
   font-style: italic;
   margin-top: 16px;
   color: var(--clr-tertiary-400);
+}
+
+li {
+  color: var(--clr-tertiary-400);
+  margin-bottom: 16px;
+  list-style-type: upper-roman;
+  font-size: larger;
 }

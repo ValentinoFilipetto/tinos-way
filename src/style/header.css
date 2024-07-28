@@ -13,7 +13,7 @@
 
 .greeting {
   color: var(--clr-tertiary-400);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .greeting .tooltiptext {
@@ -53,5 +53,5 @@
 
   .tooltiptext {
     margin-top: 34.5px;
-  } 
+  }
 }

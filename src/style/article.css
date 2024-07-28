@@ -37,6 +37,12 @@
   .article-wrapper {
     max-width: 100%;
     padding-bottom: 36px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .article-title {
+    padding: 0px 20px 0px 20px;
   }
 }
 

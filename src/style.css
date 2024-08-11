@@ -1,13 +1,15 @@
 :root {
   color-scheme: dark;
-  --clr-primary-200: rgb(1, 1, 17);
+  --clr-primary-200: rgb(7, 7, 30);
   --clr-secondary-300: rgb(43, 175, 219);
   --clr-tertiary-400: rgb(188, 188, 56);
+  --text-primary: rgb(255, 255, 255);
+  --text-variation: rgb(199, 229, 239);
 }
 
 * {
   background-color: var(--clr-primary-200);
-  color: rgb(255, 255, 255);
+  color: var(--text-primary);
   font-family: Nunito;
 }
 

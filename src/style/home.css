@@ -29,14 +29,14 @@
 
 .article-preview {
   animation: fadeInUp 0.3s ease-out forwards;
-  border: 2px solid white;
+  border: 2px solid var(--text-primary);
   border-radius: 12px;
   margin-bottom: 32px;
   padding: 8px 16px;
 }
 
 .article-details {
-  color: rgb(199, 229, 239);
+  color: var(--text-variation);
 }
 
 .article-preview:hover a {

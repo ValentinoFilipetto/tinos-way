@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: Riflessioni su Proust e la Recherche, I
+title: Riflessioni su Proust e la Recherche - I
 author: Valentino Filipetto
 date: 2024-07-28
 tags: post
